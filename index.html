@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Creative services including website development, video editing, children's game development, photography and cinematography."
+    >
+
+    <title>Creative Services | Bring Your Ideas to Life</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h1 class="logo">Creative<span>Studio</span></h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+                <p class="hero-tag">CREATIVE • DIGITAL • PROFESSIONAL</p>
+
+                <h2>Bringing Your Ideas to Life Through Technology & Creativity.</h2>
+
+                <p class="hero-description">
+                    From websites and e-commerce solutions to video editing,
+                    children's games, photography and cinematography.
+                </p>
+
+                <a href="#contact" class="primary-button">
+                    Get a Quote
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+
+            <div class="section-heading">
+                <p>WHAT I OFFER</p>
+                <h2>Creative Services</h2>
+            </div>
+
+
+            <div class="services-container">
+
+                <!-- Website Development -->
+                <article class="service-card">
+                    <div class="service-icon">🌐</div>
+
+                    <h3>Website & E-commerce Development</h3>
+
+                    <p>
+                        Modern, responsive websites and e-commerce solutions
+                        designed to help individuals and businesses grow online.
+                    </p>
+
+                    <a href="#contact">Get a Quote →</a>
+                </article>
+
+
+                <!-- Video Editing -->
+                <article class="service-card">
+                    <div class="service-icon">🎬</div>
+
+                    <h3>Video Editing</h3>
+
+                    <p>
+                        Engaging and professionally edited videos for social media,
+                        businesses, content creators and personal projects.
+                    </p>
+
+                    <a href="#contact">Get a Quote →</a>
+                </article>
+
+
+                <!-- Game Development -->
+                <article class="service-card">
+                    <div class="service-icon">🎮</div>
+
+                    <h3>Children's Game Development</h3>
+
+                    <p>
+                        Fun, creative and engaging games designed to provide
+                        enjoyable experiences for children.
+                    </p>
+
+                    <a href="#contact">Get a Quote →</a>
+                </article>
+
+
+                <!-- Photography -->
+                <article class="service-card">
+                    <div class="service-icon">📸</div>
+
+                    <h3>Photography & Cinematography</h3>
+
+                    <p>
+                        Creative photography and cinematic video services to
+                        capture important moments, stories and experiences.
+                    </p>
+
+                    <a href="#contact">Get a Quote →</a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="about">
+
+            <div class="section-heading">
+                <p>ABOUT ME</p>
+                <h2>Creative. Technical. Passionate.</h2>
+            </div>
+
+            <p class="about-description">
+                I combine technology and creativity to help individuals,
+                creators and businesses bring their ideas to life. Whether
+                you need a professional website, engaging video content,
+                a creative game or visual storytelling, I'm here to help.
+            </p>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+
+            <div class="section-heading">
+                <p>LET'S WORK TOGETHER</p>
+                <h2>Get a Quote</h2>
+            </div>
+
+            <p class="contact-description">
+                Tell me about your project and I'll get back to you to discuss
+                your requirements and provide a quote.
+            </p>
+
+
+            <form id="quote-form">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="service">Service Needed</label>
+
+                    <select id="service" name="service" required>
+
+                        <option value="">Select a service</option>
+
+                        <option value="website">
+                            Website & E-commerce Development
+                        </option>
+
+                        <option value="video-editing">
+                            Video Editing
+                        </option>
+
+                        <option value="game-development">
+                            Children's Game Development
+                        </option>
+
+                        <option value="photography">
+                            Photography & Cinematography
+                        </option>
+
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="budget">Estimated Budget (Optional)</label>
+
+                    <input
+                        type="text"
+                        id="budget"
+                        name="budget"
+                        placeholder="Example: £100 - £300"
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="message">Tell Me About Your Project</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Describe what you need..."
+                        required
+                    ></textarea>
+                </div>
+
+
+                <button type="submit" class="primary-button">
+                    Send Enquiry
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Payment Information -->
+        <section class="payment">
+
+            <h2>Secure Payments</h2>
+
+            <p>
+                Once we've discussed your project and agreed on a price,
+                you'll receive a secure payment link.
+            </p>
+
+            <p>
+                Payments will be processed securely through a trusted
+                payment provider.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 CreativeStudio. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
