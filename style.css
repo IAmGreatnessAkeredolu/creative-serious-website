@@ -237,9 +237,30 @@ section {
 }
 
 .service-icon {
-    font-size: 2.5rem;
+    width: 100%;
+    height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     margin-bottom: 20px;
+}
+
+.service-icon img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.4s ease;
+}
+
+.service-card:hover .service-icon img {
+    transform:
+        scale(1.08)
+        rotate(-3deg);
 }
 
 .service-card h3 {
@@ -697,4 +718,251 @@ footer {
         translateY(-10px)
         rotate(0deg)
         scale(1.02);
+}
+
+/* =========================
+   CREATIVE PLAYGROUND
+========================= */
+
+.services {
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Heading highlight */
+
+.section-heading h2 span {
+    display: block;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #84cc16,
+            #9333ea
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* Creative subtitle */
+
+.creative-subheading {
+    max-width: 600px;
+
+    margin: 20px auto 0;
+
+    color: #64748b;
+
+    font-size: 1rem;
+
+    letter-spacing: 0;
+}
+
+
+/* Decorative container */
+
+.creative-section-decoration {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+}
+
+
+/* Creative doodles */
+
+.doodle {
+    position: absolute;
+
+    font-weight: bold;
+
+    opacity: 0.5;
+
+    animation:
+        doodleFloat
+        7s
+        ease-in-out
+        infinite;
+}
+
+
+.doodle-one {
+    top: 12%;
+    left: 8%;
+
+    color: #2563eb;
+
+    font-size: 3rem;
+}
+
+
+.doodle-two {
+    top: 20%;
+    right: 8%;
+
+    color: #9333ea;
+
+    font-size: 2.5rem;
+
+    animation-delay: 2s;
+}
+
+
+.doodle-three {
+    bottom: 15%;
+    left: 5%;
+
+    color: #84cc16;
+
+    font-size: 3rem;
+
+    animation-delay: 4s;
+}
+
+
+/* Doodle movement */
+
+@keyframes doodleFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-15px)
+            rotate(10deg);
+
+    }
+
+}
+
+/* =========================
+   SERVICE PERSONALITY
+========================= */
+
+
+/* Website Development */
+
+.service-card:nth-child(1)::after {
+
+    content: "BUILD";
+
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    padding: 5px 10px;
+
+    border-radius: 50px;
+
+    background-color: #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* Video Editing */
+
+.service-card:nth-child(2)::after {
+
+    content: "CREATE";
+
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    padding: 5px 10px;
+
+    border-radius: 50px;
+
+    background-color: #fce7f3;
+
+    color: #db2777;
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* Game Development */
+
+.service-card:nth-child(3)::after {
+
+    content: "PLAY";
+
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    padding: 5px 10px;
+
+    border-radius: 50px;
+
+    background-color: #ecfccb;
+
+    color: #65a30d;
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* Photography */
+
+.service-card:nth-child(4)::after {
+
+    content: "CAPTURE";
+
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    padding: 5px 10px;
+
+    border-radius: 50px;
+
+    background-color: #ede9fe;
+
+    color: #7c3aed;
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
 }
