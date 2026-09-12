@@ -8,24 +8,30 @@
 
     <meta
       name="description"
-      content="Website and e-commerce development portfolio."
+      content="Explore my website and e-commerce development portfolio."
     />
 
     <title>Website Development Portfolio | CreativeStudio</title>
 
-    <!-- Link to main stylesheet -->
+    <!-- Main stylesheet -->
 
     <link rel="stylesheet" href="../style.css" />
   </head>
 
   <body>
-    <!-- Navigation -->
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
     <header>
       <nav>
+        <!-- Logo -->
+
         <h1 class="logo">
           <a href="../index.html"> Creative<span>Studio</span> </a>
         </h1>
+
+        <!-- Navigation Links -->
 
         <ul class="nav-links">
           <li>
@@ -44,7 +50,9 @@
     </header>
 
     <main>
-      <!-- Portfolio Hero -->
+      <!-- =========================
+             PORTFOLIO HERO
+        ========================== -->
 
       <section class="portfolio-hero">
         <p class="portfolio-label">WEBSITE DEVELOPMENT</p>
@@ -61,7 +69,9 @@
         </a>
       </section>
 
-      <!-- Portfolio Projects -->
+      <!-- =========================
+             FEATURED PROJECTS
+        ========================== -->
 
       <section class="portfolio-section">
         <div class="section-heading">
@@ -70,50 +80,337 @@
           <h2>Featured Projects</h2>
         </div>
 
+        <!-- Portfolio Grid -->
+
         <div class="portfolio-grid">
-          <!-- Portfolio Project Example -->
+          <!-- =================================
+                     PROJECT TYPE 1:
+                     IMAGE / WEBSITE SCREENSHOT
+                ================================== -->
 
           <article class="portfolio-card">
-            <!-- PROJECT PREVIEW -->
+            <!-- Project Preview -->
+
             <div class="portfolio-preview">
+              <!--
+                        Replace this image path with
+                        your actual project screenshot.
+                        -->
+
               <img
-                src="../assets/images/your-project-image.jpg"
-                alt="Description of your project"
+                src="../assets/images/website-project.jpg"
+                alt="Screenshot of website project"
                 class="portfolio-image"
               />
             </div>
 
-            <!-- PROJECT INFORMATION -->
+            <!-- Project Content -->
+
             <div class="portfolio-content">
               <span class="project-category"> WEBSITE DEVELOPMENT </span>
 
-              <h3>Your Project Name</h3>
+              <h3>Your Website Project</h3>
 
-              <p>Description of your project goes here.</p>
+              <p>
+                Add a short description explaining the website, the client's
+                needs and what you created.
+              </p>
+
+              <!-- Technologies -->
 
               <div class="project-tools">
                 <span>HTML</span>
+
                 <span>CSS</span>
+
                 <span>JavaScript</span>
               </div>
 
+              <!-- Project Links -->
+
               <div class="project-links">
-                <a href="#" class="portfolio-button"> View Project </a>
+                <!-- Live Website -->
+
+                <a
+                  href="https://your-live-project.com"
+                  class="portfolio-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit Website
+                </a>
+
+                <!-- Source Code -->
+
+                <a
+                  href="https://github.com/yourusername/project"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Code →
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- Add More Projects Here -->
+          <!-- =================================
+                     PROJECT TYPE 2:
+                     VIDEO PROJECT
+                ================================== -->
+
+          <article class="portfolio-card">
+            <!-- Video Preview -->
+
+            <div class="portfolio-preview">
+              <video class="portfolio-video" controls preload="metadata">
+                <source
+                  src="../assets/videos/project-demo.mp4"
+                  type="video/mp4"
+                />
+
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <!-- Project Content -->
+
+            <div class="portfolio-content">
+              <span class="project-category"> WEBSITE DEMONSTRATION </span>
+
+              <h3>Website Project Demo</h3>
+
+              <p>
+                A video demonstration showing how the website works and
+                highlighting its key features.
+              </p>
+
+              <div class="project-tools">
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="../assets/videos/project-demo.mp4"
+                  class="portfolio-button"
+                  target="_blank"
+                >
+                  Watch Full Video
+                </a>
+
+                <a
+                  href="../assets/videos/project-demo.mp4"
+                  class="project-link"
+                  download
+                >
+                  Download Video
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- =================================
+                     PROJECT TYPE 3:
+                     DOCUMENT / PDF PROJECT
+                ================================== -->
+
+          <article class="portfolio-card">
+            <!-- Document Preview -->
+
+            <div class="portfolio-preview">
+              <div class="document-preview">
+                <div class="document-icon">📄</div>
+
+                <h3>Project Case Study</h3>
+
+                <p>View the project documentation and development process.</p>
+              </div>
+            </div>
+
+            <!-- Project Content -->
+
+            <div class="portfolio-content">
+              <span class="project-category"> PROJECT DOCUMENTATION </span>
+
+              <h3>Website Case Study</h3>
+
+              <p>
+                A document explaining the planning, design and development
+                process behind this project.
+              </p>
+
+              <div class="project-tools">
+                <span>PDF</span>
+
+                <span>Documentation</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="../assets/documents/project-case-study.pdf"
+                  class="portfolio-button"
+                  target="_blank"
+                >
+                  View Document
+                </a>
+
+                <a
+                  href="../assets/documents/project-case-study.pdf"
+                  class="project-link"
+                  download
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- =================================
+                     PROJECT TYPE 4:
+                     DOWNLOADABLE PROJECT FILE
+                ================================== -->
+
+          <article class="portfolio-card">
+            <!-- File Preview -->
+
+            <div class="portfolio-preview">
+              <div class="file-preview">
+                <span> 📦 </span>
+
+                <h3>Project Files</h3>
+
+                <p>Downloadable project files and resources.</p>
+              </div>
+            </div>
+
+            <!-- Project Content -->
+
+            <div class="portfolio-content">
+              <span class="project-category"> DOWNLOAD </span>
+
+              <h3>Website Project Files</h3>
+
+              <p>
+                Download selected files and resources related to this website
+                project.
+              </p>
+
+              <div class="project-tools">
+                <span>ZIP</span>
+
+                <span>Project Files</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="../assets/downloads/project-files.zip"
+                  class="portfolio-button"
+                  download
+                >
+                  Download Files
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- =================================
+                     PROJECT TYPE 5:
+                     PLAYABLE WEB GAME / INTERACTIVE PROJECT
+
+                     NOTE:
+                     This is included as a reusable
+                     example. It would normally be
+                     more relevant on your Game
+                     Development portfolio page.
+                ================================== -->
+
+          <article class="portfolio-card">
+            <!-- Game Preview -->
+
+            <div class="portfolio-preview">
+              <div class="game-preview">
+                <span> 🎮 </span>
+
+                <h3>Interactive Project</h3>
+
+                <p>Explore this interactive digital experience.</p>
+              </div>
+            </div>
+
+            <!-- Project Content -->
+
+            <div class="portfolio-content">
+              <span class="project-category"> INTERACTIVE PROJECT </span>
+
+              <h3>Interactive Web Experience</h3>
+
+              <p>
+                A creative interactive project built using web technologies.
+              </p>
+
+              <div class="project-tools">
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://your-project-link.com"
+                  class="portfolio-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Explore Project
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- =================================
+                     ADD MORE PROJECTS BELOW
+
+                     Copy one of the project card
+                     examples above depending on the
+                     type of content you want to show.
+                ================================== -->
+        </div>
+      </section>
+
+      <!-- =========================
+             CALL TO ACTION
+        ========================== -->
+
+      <section class="portfolio-cta">
+        <div class="section-heading">
+          <p>HAVE A PROJECT?</p>
+
+          <h2>Let's Build Something Creative Together.</h2>
+
+          <p>
+            Have an idea for a website, e-commerce platform or digital project?
+            Let's discuss it.
+          </p>
+
+          <a href="../index.html#contact" class="primary-button">
+            Get a Quote
+          </a>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <footer>
       <p>© 2026 Greatness Works. All Rights Reserved.</p>
-
-      <p class="founder-credit">A creative studio by Greatness Akeredolu.</p>
     </footer>
   </body>
 </html>
