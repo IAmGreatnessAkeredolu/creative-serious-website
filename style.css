@@ -1089,3 +1089,11 @@ button:disabled {
 
     cursor: not-allowed;
 }
+
+.founder-credit {
+    margin-top: 8px;
+
+    font-size: 0.85rem;
+
+    opacity: 0.75;
+}
